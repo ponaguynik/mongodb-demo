@@ -46,7 +46,6 @@ public class TypeServiceImpl<T extends Type<E>, E extends TypeEntity> implements
         throw new UnsupportedOperationException();
     }
 
-    // TODO: 03-Sep-18 doesn't work
     @Override
     public T update(TypeUpdateDto typeUpdate, Class<T> typeClass, Class<E> entityClass) {
         T type = findById(typeUpdate.getId(), typeClass);
